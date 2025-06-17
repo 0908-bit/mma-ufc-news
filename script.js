@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const fighterList = document.getElementById('fighter-list');
     const fighterStats = document.getElementById('fighter-stats');
 
-    fetch('https://0908-bit.github.io/mma-ufc-news/data/fighters.json')
+   fetch('./data/fighters.json')
         .then(response => response.json())
         .then(data => {
             // Popola la lista fighter nella homepage
